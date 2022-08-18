@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(226, 223, 223);
+  font-family: "Inter";
+}
+body {
+  max-width: 1358px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.banner {
+  background-image: url("/src/assets//images/Background.png");
+  height: 192px;
+  width: 1358px;
+  position: relative;
+}
+.header-wrap {
+  position: absolute;
+  background: none;
+  top: 128px;
+  left: 167px;
+}
+.header {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-around;
+  height: 128px;
+  width: 1024px;
+  margin: 0 auto;
+  background: none;
+}
+.info {
+  background: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+}
+.grow {
+  display: flex;
+  flex-grow: 1;
+}
+.avatar {
+  border-radius: 65px;
+}
+.name {
+  display: flex;
+  align-items: flex-end;
+}
+.name p {
+  background: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+.button {
+  display: flex;
+  margin-left: 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 17px 9px 13px;
+  width: 119px;
+  height: 38px;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+.button.call {
+  padding: 9px 17px 9px 13px;
+  width: 84px;
+  height: 38px;
+}
+.button img {
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+.pictures {
+  padding-top: 110px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1358px;
+}
+.pictures Item:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .banner{
+    width: 1000px;
+  }
+  .header{
+    width: 700px;
+  }
+  .pictures{
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .banner{
+    width: 700px;
+  }
+  .header{
+    width: 500px;
+  }
+  .pictures{
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .banner{
+    width: 300px;
+  }
+  .header-wrap{
+    left: 56px;
+  }
+  .header{
+    width: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pictures{
+    width: 300px;
+    padding-top: 220px;
+  }
+  .info{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .name p{
+    margin-left: 0;
+  }
+  .button{
+    margin-left: 0;
+    margin-right: 25px;
+  }
+  .button.call{
+    margin-left: 20px;
+  }
+}

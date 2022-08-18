@@ -1,0 +1,33 @@
+.card {
+  padding-bottom: 32px;
+  :hover{
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      transform: translate(0,-0.15em)
+  }
+img {
+  object-fit: cover;
+  width: 431.33px;
+  height: 216px;
+  border-radius: 8px;
+}
+p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #111827;
+}
+}
+
+@media screen and (max-width: 1100px) {
+.card{
+  margin: auto;
+}
+}
+@media screen and (max-width: 750px) {
+.card{
+  img {
+    width: 250px;
+  }
+}
+}
